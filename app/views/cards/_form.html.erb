@@ -1,0 +1,13 @@
+
+
+<%= form_for @card do |f| %>
+  <%= f.label :card_name %>
+  <%= f.text_field :card_name %>
+  <%= f.label :card_content %>
+  <%= f.text_field :card_content %>
+  <%= f.label :suit %>
+  <%= f.text_field :suit %>
+  <%= f.label :arcana %>
+  <%= f.text_field :arcana %>
+  <%= f.submit  %>
+<% end %>

@@ -1,0 +1,8 @@
+<h1><%= @card.card_name %></h1>
+
+<p><%= link_to "Return Home", cards_path %></p>
+
+<p><%= link_to "Edit", edit_card_path(@card) %></p>
+<p><%= link_to "Delete", card_path(@card),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %></p>
