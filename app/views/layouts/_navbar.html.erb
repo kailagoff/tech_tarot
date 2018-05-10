@@ -1,0 +1,19 @@
+<nav>
+    <div class="nav-wrapper">
+      <a href="#index" class="brand-logo center" id="logo-center">TECH TAROT</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <% if user_signed_in? %>
+					<li><%= link_to 'My Account', edit_user_registration_path %></li>
+					<li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+				<% else %>
+					<li><%= link_to 'Login', new_user_session_path %></li>
+					<li><%= link_to 'Register', new_user_registration_path %></li>
+				<% end %>
+      </ul>
+    </div>
+  </nav>

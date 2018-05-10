@@ -14,3 +14,32 @@
  *= require_self
  */
 @import "materialize";
+
+html, body {
+  background: black;
+  color: #AA8C2C;
+}
+
+nav {
+  margin-top: 50px;
+  padding-top: 50px;
+  height: 200px;
+  text-shadow: black 2px 2px 2px;
+  background-color: #AA8C2C;
+}
+nav ul li a {
+  color: white;
+}
+
+html, body a {
+  color: white;
+}
+html, body a:hover {
+  color: #AA8C2C;
+}
+
+#logo-center {
+  font-family: 'VT323', monospace;
+  color: white;
+  font-size: 100px;
+}
