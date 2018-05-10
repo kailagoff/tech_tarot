@@ -1,0 +1,9 @@
+<p>major works</p>
+
+<h1> Major Cards </h1>
+
+<ul>
+  <% @cards.each do |card, arcana| %>
+     <li><%= link_to card.arcana, card_path(card) %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,9 @@
+<p>minor works</p>
+
+<h1> Minor Cards </h1>
+
+<ul>
+  <% @cards.each do |card, arcana| %>
+     <li><%= link_to card.card_name, card_path(card) %></li>
+  <% end %>
+</ul>

@@ -1,10 +1,9 @@
 <nav>
     <div class="nav-wrapper">
-      <a href="#index" class="brand-logo center" id="logo-center">TECH TAROT</a>
+      <li class="brand-logo center" id="logo-center" ><%= link_to 'TECH TAROT', root_path %></li>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+        <li><%= link_to 'Major Arcana', majors_path %></li>
+        <li><%= link_to 'Minor Arcana', minors_path %></li>
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <% if user_signed_in? %>
