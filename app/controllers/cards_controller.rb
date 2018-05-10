@@ -37,7 +37,7 @@ class CardsController < ApplicationController
   def destroy
     @card = Card.find(params[:id])
     @card.destroy
-    redirect_to lists_path
+    redirect_to cards_path
   end
 
 private
