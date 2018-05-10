@@ -1,10 +1,13 @@
 <h1>Cards</h1>
 
-<ul>
-  <% @cards.each do |card| %>
-     <li><%= link_to card.card_name, card_path(card) %></li>
-  <% end %>
-</ul>
+<div class="row">
+  <div class="col s6">
+      <% @cards.each do |card| %>
+         <%= link_to card.card_name, card_path(card) %>
+      <% end %>
+    </div>
+  </div>
+
 
 
 <%= link_to "New Card", new_card_path %>
