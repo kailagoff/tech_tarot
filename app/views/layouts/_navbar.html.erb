@@ -6,6 +6,7 @@
         <li><%= link_to 'Minor Arcana', minors_path %></li>
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><%= link_to 'Clarity Reading', readings_path %></li>
         <% if user_signed_in? %>
 					<li><%= link_to 'My Account', edit_user_registration_path %></li>
 					<li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
