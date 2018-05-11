@@ -12,7 +12,16 @@ class Card < ActiveRecord::Base
     present = @deck.slice(rand(77))
     future = @deck.slice(rand(76))
     @spread = [past, present, future,]
-    return @spread
+    if (past === present || past === future || present === future)
+      @deck = Card.all
+      past = @deck.slice(rand(78))
+      present = @deck.slice(rand(77))
+      future = @deck.slice(rand(76))
+      @list = [past, present, future,]
+      return @list
+    else
+      return @spread
+    end
   end
 
   def self.focusCard
@@ -26,8 +35,6 @@ class Card < ActiveRecord::Base
     return @focus
   end
 
-  def self.major
-    Card.where('arcana = major').pluck(:card_name)
-  end
+  scope :major_arcana, -> { where("arcana like ?", "%major%") }
 
 end

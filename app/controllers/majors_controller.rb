@@ -1,7 +1,8 @@
 class MajorsController < ApplicationController
 
   def index
-    @cards = Card.select(:arcana)
+    @cards = Card.all
+    @arcana_major = @cards.major_arcana
   end
 
 end

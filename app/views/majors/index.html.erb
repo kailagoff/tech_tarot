@@ -1,9 +1,5 @@
 <h1> Major Cards </h1>
 
-<ul>
-  <% if (:arcana === "major") %>
-  <% @cards.each do |card| %>
-    <li><%= link_to card.card_name, card_path(card) %></li>
-  <% end %>
+<% @arcana_major.each do |card| %>
+    <%= link_to card.card_name, card_path(card) %>
 <% end %>
-</ul>
