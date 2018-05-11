@@ -3,6 +3,10 @@
 <div class="section">
      <div class="cards-grid">
        <div class="row">
+          <p><%= @focus.card_name %></p>
+          <p><%= image_tag @focus.image.url(:medium) %></p>
+       </div>
+       <div class="row">
          <% @cards.each do |card| %>
          <div class="col s4 l4 m4 cards-holder">
            <div class="card hoverable">

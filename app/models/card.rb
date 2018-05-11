@@ -11,8 +11,19 @@ class Card < ActiveRecord::Base
     past = @deck.slice(rand(78))
     present = @deck.slice(rand(77))
     future = @deck.slice(rand(76))
-    @spread = [past, present, future]
+    @spread = [past, present, future,]
     return @spread
+  end
+
+  def self.focusCard
+    @deck = Card.all
+    past = @deck.slice(rand(78))
+    present = @deck.slice(rand(77))
+    future = @deck.slice(rand(76))
+    focus = @deck.slice(rand(75))
+    @spread = [past, present, future, focus]
+    @focus = @spread.pop()
+    return @focus
   end
 
 end
