@@ -1,5 +1,5 @@
-<h6>three card reading for clarity</h6>
 <div class="container">
+  <h6>four card reading for clarity</h6>
 
 <div class="section">
      <div class="cards-grid">
@@ -8,13 +8,14 @@
          <div class="col s4 offset-s4 cards-holder">
            <div class="card hoverable">
              <div class="card-image materialboxed" width="50">
-               <p><%= @focus.card_name %></p>
+               <p><strong><%= @focus.card_name %></strong></p>
                <p><%= image_tag @focus.image.url(:medium) %></p>
              </div>
              <div class="card-content mar-bottom">
-               <%= @focus.card_content %>
+               <%= link_to @focus.card_content, card_path(@focus) %>
              </div>
            </div>
+           <br><br><br><br><br><br><br><br><br>
          </div>
         </div>
        </div>
@@ -24,7 +25,7 @@
          <div class="col s4 l4 m4 cards-holder">
            <div class="card hoverable">
              <div class="card-image materialboxed" width="50">
-               <p><%= card.card_name %></p>
+               <p><strong><%= card.card_name %></strong></p>
                <p><%= image_tag card.image.url(:medium) %></p>
              </div>
              <div class="card-content mar-bottom">

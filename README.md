@@ -23,16 +23,16 @@ _The website is divided into several different sections. There is a home page th
 ## Post Epicodus Plan
 
 ##### Project Priorities
-  * - [ ] Finish polishing portfolio
-  * - [ ] Deploy portfolio to Heroku
+  * - [ ] Clean up and finish polishing portfolio
+  * - [ ] fix bugs to deploy portfolio to Heroku
   * - [ ] Create another original project in Angular
   * - [ ] Explore React and its UI components
-  * - [ ] Continue building out capstone
+  * - [ ] Continue building out capstone to its complete
   * - [ ] Continue to whiteboard with Edabit in JS and Ruby
 
 ##### Projects
   * - [ ] Begin exploring Aframe VR
-  * - [ ] Explore Solidarity
+  * - [ ] Explore Solidarity, and potentially creating a dApp
   * - [ ] Build a blockchain in Ruby
   * - [ ] Explore similarities between Python and Ruby
   * - [ ] Build a front end with React, that communicates with Rails API
@@ -46,7 +46,7 @@ _The website is divided into several different sections. There is a home page th
 <kbd><img src="app/assets/images/books.JPG"></kbd>
 
 ##### Bonus
-  * - [ ] Responsive Web Design
+  * - [ ] Leanr what's possible with Responsive Web Design
   * - [ ] Attend 2018 ATC-W Conference in Portland
   * - [ ] Attend between 2-3 meetups a month regularly
   * - [ ] Attend first Hackathon
