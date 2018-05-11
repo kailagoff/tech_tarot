@@ -1,7 +1,7 @@
 class CardsController < ApplicationController
 
   def index
-    @cards = Card.all
+    @cards = Card.all.order(:id)
   end
 
   def show
@@ -10,6 +10,14 @@ class CardsController < ApplicationController
 
   def new
     @card = Card.new
+  end
+
+  def threeCards
+    @deck = Card.all
+    past = @deck.slice!(rand(78))
+    present = @deck.slice!(rand(77))
+    future = @deck.slice!(rand(76))
+    @spread = [past, present, future]
   end
 
   def create
