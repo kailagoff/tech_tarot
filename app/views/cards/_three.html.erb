@@ -1,5 +1,21 @@
-<h6>random three card reading</h6>
+<h6>three card reading</h6>
 
-<% @cards.each do |card| %>
-  <h2><%= card.card_name %></h2>
-<% end %>
+<div class="section">
+     <div class="cards-grid">
+       <div class="row">
+         <% @cards.each do |card| %>
+         <div class="col s4 l4 m4 cards-holder">
+           <div class="card hoverable">
+             <div class="card-image materialboxed" width="50">
+               <p><%= card.card_name %></p>
+               <p><%= image_tag card.image.url(:medium) %></p>
+             </div>
+             <div class="card-content mar-bottom">
+               <%= card.card_content %>
+             </div>
+           </div>
+         </div>
+         <% end %>
+       </div>
+     </div>
+ </div>
