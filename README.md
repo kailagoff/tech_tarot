@@ -20,6 +20,39 @@ _The website is divided into several different sections. There is a home page th
   * - [ ] Hand drawn versions of all the cards
 
 
+## Post Epicodus Plan
+
+##### Project Priorities
+  * - [ ] Finish polishing portfolio
+  * - [ ] Deploy portfolio to Heroku
+  * - [ ] Create another original project in Angular
+  * - [ ] Explore React and its UI components
+  * - [ ] Continue building out capstone
+  * - [ ] Continue to whiteboard with Edabit in JS and Ruby
+
+##### Projects
+  * - [ ] Begin exploring Aframe VR
+  * - [ ] Explore Solidarity
+  * - [ ] Build a blockchain in Ruby
+  * - [ ] Explore similarities between Python and Ruby
+  * - [ ] Build a front end with React, that communicates with Rails API
+
+##### Books
+  * - [ ] The Well Grounded Rubyist - Black
+  * - [ ] Ruby on Rails Tutorial - Hartl
+  * - [ ] JavaScript & jQuery - Duckett
+  * - [ ] Learning Javascript - Brown
+  * - [ ] Blockchain - Swan
+<kbd><img src="app/assets/images/books.JPG"></kbd>
+
+##### Bonus
+  * - [ ] Responsive Web Design
+  * - [ ] Attend 2018 ATC-W Conference in Portland
+  * - [ ] Attend between 2-3 meetups a month regularly
+  * - [ ] Attend first Hackathon
+
+
+
 ## Install the DATABASE instructions
 
 * _Enter into the terminal:_ ``` $bundle install```
