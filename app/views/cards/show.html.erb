@@ -1,8 +1,14 @@
-<h1><%= @card.card_name %></h1>
-<h6><%= @card.card_content %></h6>
-<h6><%= @card.suit %></h6>
-<h6><%= @card.arcana %></h6>
-<h6><%= image_tag @card.image.url(:medium) %></h6>
+<div class="row">
+  <div class="col s4">
+    <h6><%= image_tag @card.image.url(:large) %></h6>
+  </div>
+  <div class="col s8">
+    <h1><%= @card.card_name %></h1>
+    <h6><%= @card.card_content %></h6>
+    <h6><%= @card.suit %></h6>
+    <h6><%= @card.arcana %></h6>
+  </div>
+</div>
 
 <p><%= link_to "Return Home", cards_path %></p>
 
