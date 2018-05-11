@@ -6,18 +6,11 @@ class CardsController < ApplicationController
 
   def show
     @card = Card.find(params[:id])
+    @cards = Card.threeCards()
   end
 
   def new
     @card = Card.new
-  end
-
-  def threeCards
-    @deck = Card.all
-    past = @deck.slice!(rand(78))
-    present = @deck.slice!(rand(77))
-    future = @deck.slice!(rand(76))
-    @spread = [past, present, future]
   end
 
   def create
@@ -48,9 +41,9 @@ class CardsController < ApplicationController
     redirect_to cards_path
   end
 
+
 private
  def card_params
    params.require(:card).permit(:card_name, :card_content, :suit, :arcana, :image)
  end
-
 end

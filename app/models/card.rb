@@ -5,4 +5,14 @@ class Card < ActiveRecord::Base
   validates :card_content, :presence => true
   validates :suit, :presence => true
   validates :arcana, :presence => true
+
+  def self.threeCards
+    @deck = Card.all
+    past = @deck.slice(rand(78))
+    present = @deck.slice(rand(77))
+    future = @deck.slice(rand(76))
+    @spread = [past, present, future]
+    return @spread
+  end
+
 end
