@@ -1,11 +1,24 @@
-<h6>three card reading</h6>
+<h6>three card reading for clarity</h6>
+<div class="container">
 
 <div class="section">
      <div class="cards-grid">
        <div class="row">
-          <p><%= @focus.card_name %></p>
-          <p><%= image_tag @focus.image.url(:medium) %></p>
+         <div id="focus-card">
+         <div class="col s4 offset-s4 cards-holder">
+           <div class="card hoverable">
+             <div class="card-image materialboxed" width="50">
+               <p><%= @focus.card_name %></p>
+               <p><%= image_tag @focus.image.url(:medium) %></p>
+             </div>
+             <div class="card-content mar-bottom">
+               <%= @focus.card_content %>
+             </div>
+           </div>
+         </div>
+        </div>
        </div>
+       <hr>
        <div class="row">
          <% @cards.each do |card| %>
          <div class="col s4 l4 m4 cards-holder">
@@ -15,7 +28,7 @@
                <p><%= image_tag card.image.url(:medium) %></p>
              </div>
              <div class="card-content mar-bottom">
-               <%= card.card_content %>
+               <%= link_to card.card_content, card_path(card) %>
              </div>
            </div>
          </div>
@@ -23,3 +36,4 @@
        </div>
      </div>
  </div>
+</div>
