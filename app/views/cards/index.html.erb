@@ -1,13 +1,12 @@
-<h1>Cards</h1>
-
 <div class="row">
-  <div class="col s6">
-      <% @cards.each do |card| %>
-         <%= link_to card.card_name, card_path(card) %>
-      <% end %>
+  <div class="col s12">
+    <div id="cards-home">
+    <% @cards.each do |card| %>
+       <%= link_to image_tag(card.image.url(:thumb)), card_path(card) %>
+    <% end %>
     </div>
   </div>
-
+</div>
 
 
 <%= link_to "New Card", new_card_path %>

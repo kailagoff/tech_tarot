@@ -29,13 +29,15 @@ nav {
   padding-left: 70px;
   padding-right: 70px;
 }
+
 nav ul li a {
   color: #AA8C2C;
 }
 
 html, body a {
-  color: white;
+  color: #AA8C2C;
 }
+
 html, body a:hover {
   color: #AA8C2C;
 }
@@ -44,4 +46,9 @@ html, body a:hover {
   font-family: 'VT323', monospace;
   color: #AA8C2C;
   font-size: 100px;
+}
+
+#cards-home {
+  align-items: center;
+  text-align: center;
 }
