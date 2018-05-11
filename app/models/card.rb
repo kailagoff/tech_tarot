@@ -26,4 +26,8 @@ class Card < ActiveRecord::Base
     return @focus
   end
 
+  def self.major
+    Card.where('arcana = major').pluck(:card_name)
+  end
+
 end
