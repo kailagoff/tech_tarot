@@ -2,6 +2,10 @@
 
 <h1> Minor Cards </h1>
 <h4>Google</h4>
+<% @google_minor.each do |card| %>
+    <%= link_to card.card_name, card_path(card) %>
+    <%= image_tag(card.image.url(:thumb)) %>
+<% end %>
 <h4>Amazon</h4>
 <% @amazon_minor.each do |card| %>
     <%= link_to card.card_name, card_path(card) %>

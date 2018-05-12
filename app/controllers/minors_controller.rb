@@ -4,6 +4,7 @@ class MinorsController < ApplicationController
     @cards = Card.all.order(:id)
     @amazon_minor = @cards.minor_amazon
     @microsoft_minor = @cards.minor_microsoft
+    @google_minor = @cards.minor_google
   end
 
 end
