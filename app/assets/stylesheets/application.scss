@@ -15,6 +15,8 @@
  */
 @import "materialize";
 
+$error-color: color("red", "base") !default;
+
 html, body {
   background: black;
   color: #AA8C2C;
@@ -28,6 +30,7 @@ nav {
   background-color: white;
   padding-left: 70px;
   padding-right: 70px;
+  background-image: url( "https://ak2.picdn.net/shutterstock/videos/12107402/thumb/1.jpg?i10c=img.resize")
 }
 
 nav ul li a {
@@ -59,4 +62,17 @@ html, body a:hover {
   text-align: center;
   height: 150px;
   width: 135px;
+}
+
+
+//minor-cards
+
+#minor-cards {
+  text-align: center;
+}
+
+//major-cards
+
+#major-cards {
+  text-align: center;
 }

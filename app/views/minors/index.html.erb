@@ -1,24 +1,25 @@
-<p>minor works</p>
 
-<h1> Minor Cards </h1>
+<div id="minor-cards">
+  <h1> Minor Cards </h1>
 
-<h4>Google</h4>
-  <% @google_minor.each do |card| %>
-      <%= link_to card.card_name, card_path(card) %>
-      <%= image_tag(card.image.url(:thumb)) %>
-  <% end %>
-<h4>Amazon</h4>
-  <% @amazon_minor.each do |card| %>
-      <%= link_to card.card_name, card_path(card) %>
-      <%= image_tag(card.image.url(:thumb)) %>
-  <% end %>
-<h4>Microsoft</h4>
-  <% @microsoft_minor.each do |card| %>
-      <%= link_to card.card_name, card_path(card) %>
-      <%= image_tag(card.image.url(:thumb)) %>
-  <% end %>
-<h4>Oracle</h4>
-  <% @oracle_minor.each do |card| %>
-      <%= link_to card.card_name, card_path(card) %>
-      <%= image_tag(card.image.url(:thumb)) %>
-  <% end %>
+  <h4>GOOGLE</h4>
+    <% @google_minor.each do |card| %>
+        <%= link_to image_tag(card.image.url(:thumb)), card_path(card) %>
+    <% end %>
+    <br>
+  <h4>AMAZON</h4>
+    <% @amazon_minor.each do |card| %>
+        <%= link_to image_tag(card.image.url(:thumb)), card_path(card) %>
+    <% end %>
+    <br>
+  <h4>MICROSOFT</h4>
+    <% @microsoft_minor.each do |card| %>
+        <%= link_to image_tag(card.image.url(:thumb)), card_path(card) %>
+    <% end %>
+    <br>
+  <h4>ORACLE</h4>
+    <% @oracle_minor.each do |card| %>
+        <%= link_to image_tag(card.image.url(:thumb)), card_path(card) %>
+    <% end %>
+    <br><br><br><br><br>
+</div>

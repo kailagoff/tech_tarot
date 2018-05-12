@@ -1,7 +1,8 @@
+<div id="major-cards">
+
 <h1> Major Cards </h1>
-
-
-<% @arcana_major.each do |card| %>
-    <%= link_to card.card_name, card_path(card) %>
-    <%= image_tag(card.image.url(:medium)) %>
-<% end %>
+  <% @arcana_major.each do |card| %>
+      <%= link_to image_tag(card.image.url(:medium)), card_path(card) %>
+  <% end %>
+</div>
+<br><br><br><br><br>
