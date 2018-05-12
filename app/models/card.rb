@@ -37,4 +37,7 @@ class Card < ActiveRecord::Base
 
   scope :major_arcana, -> { where(:arcana => 'Major') }
 
+  scope :minor_amazon, -> { where(:suit => 'amazon') }
+
+
 end
