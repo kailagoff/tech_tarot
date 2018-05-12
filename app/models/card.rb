@@ -40,6 +40,7 @@ class Card < ActiveRecord::Base
   scope :minor_amazon, -> { where(:suit => 'amazon') }
   scope :minor_microsoft, -> { where(:suit => 'microsoft') }
   scope :minor_google, -> { where(:suit => 'google') }
+  scope :minor_oracle, -> { where(:suit => 'oracle') }
 
 
 end
