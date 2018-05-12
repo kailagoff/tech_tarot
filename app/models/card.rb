@@ -35,6 +35,6 @@ class Card < ActiveRecord::Base
     return @focus
   end
 
-  scope :major_arcana, -> { where("arcana like ?", "%major%") }
+  scope :major_arcana, -> { where(:arcana => 'Major') }
 
 end
