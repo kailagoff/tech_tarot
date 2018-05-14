@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :majors
   resources :minors
   resources :readings
+  resources :nasas
 end
