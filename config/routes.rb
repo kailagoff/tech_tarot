@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   resources :minors
   resources :readings
   resources :nasas
+  resource :article, only: [:show]
 end
