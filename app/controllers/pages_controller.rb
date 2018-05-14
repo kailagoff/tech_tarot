@@ -6,7 +6,6 @@ class PagesController < ApplicationController
     else
       @parameter = params[:search].downcase
       @results = Card.all.where("lower(card_name) LIKE :search", search: @parameter)
-      binding.pry
     end
   end
 
