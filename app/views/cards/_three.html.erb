@@ -1,37 +1,35 @@
 <div class="container">
-  <h6>four card reading for clarity</h6>
-
-<div class="section">
- <div class="cards-grid">
-   <div class="row">
-     <div id="focus-card">
-     <div class="col s4 offset-s4 cards-holder">
-       <div class="card hoverable">
-         <div class="card-image materialboxed" width="50">
-           <p><strong><%= link_to @focus.card_name, card_path(@focus) %></strong></p>
-           <p><%= image_tag @focus.image.url(:medium) %></p>
-         </div>
-         <div class="card-content mar-bottom">
-         </div>
-       </div>
-       <br><br><br><br><br>
+  <div class="section">
+    <div class="cards-grid">
+      <div class="row">
+        <div id="focus-card">
+          <div class="col s4 offset-s4 cards-holder">
+            <div class="card hoverable">
+              <div class="card-image materialboxed" width="50">
+                <p><strong><%= link_to @focus.card_name, card_path(@focus) %></strong></p>
+                <p><%= image_tag @focus.image.url(:medium) %></p>
+              </div>
+              <div class="card-content mar-bottom">
+              </div>
+            </div>
+            <br><br><br><br><br>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <% @cards.each do |card| %>
+        <div class="col s4 l4 m4 cards-holder">
+          <div class="card hoverable">
+            <div class="card-image materialboxed" width="50">
+              <p><strong><%= link_to card.card_name, card_path(card) %></strong></p>
+              <p><%= image_tag card.image.url(:medium) %></p>
+            </div>
+            <div class="card-content mar-bottom">
+            </div>
+          </div>
+        </div>
+       <% end %>
      </div>
-    </div>
    </div>
-   <div class="row">
-     <% @cards.each do |card| %>
-     <div class="col s4 l4 m4 cards-holder">
-       <div class="card hoverable">
-         <div class="card-image materialboxed" width="50">
-           <p><strong><%= link_to card.card_name, card_path(card) %></strong></p>
-           <p><%= image_tag card.image.url(:medium) %></p>
-         </div>
-         <div class="card-content mar-bottom">
-         </div>
-       </div>
-     </div>
-     <% end %>
-   </div>
- </div>
- </div>
+  </div>
 </div>

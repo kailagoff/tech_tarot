@@ -30,7 +30,8 @@ nav {
   background-color: white;
   padding-left: 70px;
   padding-right: 70px;
-  background-image: url( "https://ak2.picdn.net/shutterstock/videos/12107402/thumb/1.jpg?i10c=img.resize")
+  background-image: url( "https://images.unsplash.com/photo-1506362802973-bd1717de901c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07186124ccf4b0ca6663e832e18530e0&auto=format&fit=crop&w=1322&q=80");
+  background-position: center;
 }
 
 nav ul li a {
@@ -54,6 +55,7 @@ html, body a:hover {
 #cards-home {
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 //readings
