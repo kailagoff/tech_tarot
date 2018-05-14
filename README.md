@@ -19,6 +19,26 @@ _The website is divided into several different sections. There is a home page th
   * - [ ] Animations
   * - [ ] Hand drawn versions of all the cards
 
+## Install the DATABASE instructions
+
+  * _Enter into the terminal:_ ``` $bundle install```
+  * _In the following line enter:_ ```$rake db:create```
+  * _In the following line enter:_ ```$rake db:migrate```
+  * _In the following line enter:_ ```$rake db:test:prepare```
+
+## Nasa API key
+
+  * Visit https://api.nasa.gov/ to obtain a free API key
+  * Create a file called `.env`
+  * Add NASA_API_KEY=DEMO_KEY [replace DEMO_KEY with your API key] to .env
+  * ADD .env to your .gitignore file
+
+
+## Setup/Installation Requirements
+
+    * _Enter in the terminal:_ ``` $rails server```
+    * _Using a web browser, type in the url_ ``` localhost:3000 ```
+
 
 ## Post Epicodus Plan
 
@@ -43,27 +63,12 @@ _The website is divided into several different sections. There is a home page th
   * - [ ] JavaScript & jQuery - Duckett
   * - [ ] Learning Javascript - Brown
   * - [ ] Blockchain - Swan
-<kbd><img src="app/assets/images/books.JPG"></kbd>
 
 ##### Bonus
   * - [ ] Leanr what's possible with Responsive Web Design
   * - [ ] Attend 2018 ATC-W Conference in Portland
   * - [ ] Attend between 2-3 meetups a month regularly
   * - [ ] Attend first Hackathon
-
-
-
-## Install the DATABASE instructions
-
-* _Enter into the terminal:_ ``` $bundle install```
-* _In the following line enter:_ ```$rake db:create```
-* _In the following line enter:_ ```$rake db:migrate```
-* _In the following line enter:_ ```$rake db:test:prepare```
-
-## Setup/Installation Requirements
-
-  * _Enter in the terminal:_ ``` $rails server```
-  * _Using a web browser, type in the url_ ``` localhost:3000 ```
 
 ## Known Bugs
 
