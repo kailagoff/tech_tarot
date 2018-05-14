@@ -1,3 +1,4 @@
 <% @results.each do |result| %>
-        <%= result.card_name %><br>
+  <%= result.card_name %><br>
+  <%= image_tag(result.image.url(:thumb)) %>
 <% end %>

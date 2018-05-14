@@ -35,6 +35,13 @@ class Card < ActiveRecord::Base
     return @focus
   end
 
+  def self.oneCard
+    @deck = Card.all
+    one = @deck.slice(rand(78))
+    @one = one
+    return @one
+  end
+
   scope :major_arcana, -> { where(:arcana => 'Major') }
 
   scope :minor_amazon, -> { where(:suit => 'amazon') }
