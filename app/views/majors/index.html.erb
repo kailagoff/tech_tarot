@@ -1,13 +1,24 @@
 <div id="major-cards">
-
-<h1> Major Cards </h1>
-  <p>Each card carries a perspective.</p>
+  <div class="row">
+    <div class="col s5">
+      <br><br>
+      <div class="well">
+        <%= image_tag("tarot_card.jpg", :alt => "psychic", :class => "style_image") %>
+      </div>
+    </div>
+    <div class="cols s7">
+      <br><br>
+      <p>Each card carries a perspective.</p>
+      <p>Rediscovery macrobiotic blue whale, cleansing bioneers. Coconut water nonprofit integral ecstatic dance leave no trace channeling cuddle party, heartbeat of our ancestors conflict resolution on the playa. Kundalini folk music dreamwork emotional release craniosacral therapy quantum, community sharing downward dog. Co-op authentic self ancient chinese wisdom alkaline, seaweed tempeh kirtan tofurkey lavender djembe. Bay Area pranayama fire tending flax seed oil five rhythms spiral jade earrings, mercury retrograde reproductive system vitamix combined energy fields cold plunge. Optimal frequency spoken word all-natural sun salutation, tripping on native american ancestry past life yerba matte.</p>
+    </div>
+  </div>
+  <h1> Major Cards </h1>
   <p>Rediscovery macrobiotic blue whale, cleansing bioneers. Coconut water nonprofit integral ecstatic dance leave no trace channeling cuddle party, heartbeat of our ancestors conflict resolution on the playa. Kundalini folk music dreamwork emotional release craniosacral therapy quantum, community sharing downward dog. Co-op authentic self ancient chinese wisdom alkaline, seaweed tempeh kirtan tofurkey lavender djembe. Bay Area pranayama fire tending flax seed oil five rhythms spiral jade earrings, mercury retrograde reproductive system vitamix combined energy fields cold plunge. Optimal frequency spoken word all-natural sun salutation, tripping on native american ancestry past life yerba matte.</p>
   <% @arcana_major.each do |card| %>
       <%= link_to image_tag(card.image.url(:medium)), card_path(card) %>
   <% end %>
 </div>
-<br><br><br><br><br>
+<br>
 
 <div id="minor-cards">
   <h1> Minor Cards </h1>

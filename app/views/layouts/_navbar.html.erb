@@ -8,16 +8,16 @@
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><%= link_to 'Clarity Reading', readings_path %></li>
-        <li><%= link_to 'Tarot Articles', article_path %></li>
+        <li><%= link_to 'Articles', article_path %></li>
       </ul>
-    </div>
-    <p id="nav-mobile" class="right hide-on-med-and-down">
+      <p id="sign-in" class="right hide-on-med-and-down">
         <% if user_signed_in? %>
         <%= link_to 'My Account', edit_user_registration_path %> |
         <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-      <% else %>
+        <% else %>
         <%= link_to 'Login', new_user_session_path %> |
         <%= link_to 'Register', new_user_registration_path %>
-      <% end %>
-    </p>
+        <% end %>
+      </p>
+    </div>
   </nav>
