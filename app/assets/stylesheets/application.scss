@@ -58,12 +58,20 @@ html, body a:hover {
   position: relative;
 }
 
+#btn {
+  text-align: center;
+}
+
 //readings
 .card {
   background-color: black;
   text-align: center;
   height: 150px;
   width: 135px;
+}
+
+#reading-cards {
+  padding-left: 40px;
 }
 
 
@@ -83,5 +91,5 @@ html, body a:hover {
 
 #nasa_image {
   height: 250px;
-  width: 125px;
+  width: 250px;
 }

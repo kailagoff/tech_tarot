@@ -1,4 +1,13 @@
-<% @results.each do |result| %>
-  <%= result.card_name %><br>
-  <%= image_tag(result.image.url(:thumb)) %>
-<% end %>
+<div class="row">
+  <% @results.each do |result| %>
+  <div class="col s4">
+    <h6><%= image_tag result.image.url(:large) %></h6>
+  </div>
+  <div class="col s8">
+    <h1><%= result.card_name %></h1>
+    <h6><%= result.card_content %></h6>
+    <h6><%= result.suit %></h6>
+    <h6><%= result.arcana %></h6>
+  </div>
+  <% end %>
+</div>

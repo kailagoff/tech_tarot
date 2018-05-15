@@ -7,7 +7,7 @@
             <div class="card hoverable">
               <div class="card-image materialboxed" width="50">
                 <p><strong><%= link_to @focus.card_name, card_path(@focus) %></strong></p>
-                <p><%= image_tag @focus.image.url(:medium) %></p>
+                <p><%= image_tag @focus.image.url(:large) %></p>
               </div>
               <div class="card-content mar-bottom">
               </div>
@@ -22,7 +22,7 @@
           <div class="card hoverable">
             <div class="card-image materialboxed" width="50">
               <p><strong><%= link_to card.card_name, card_path(card) %></strong></p>
-              <p><%= image_tag card.image.url(:medium) %></p>
+              <p><%= image_tag card.image.url(:large) %></p>
             </div>
             <div class="card-content mar-bottom">
             </div>
@@ -33,3 +33,4 @@
    </div>
   </div>
 </div>
+<br><br><br>
