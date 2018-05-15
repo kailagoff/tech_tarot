@@ -1,4 +1,6 @@
-
+<div class="well">
+  <%= image_tag("filigree-top.png", :alt => "psychic", :id => "filigree_image") %>
+</div>
 <br><br>
 <div class="row">
   <div class="col s12">
@@ -16,11 +18,17 @@
           class: 'navbar-form navbar-left') do %>
       <div class="input-group">
         <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control" %>
-        <div class="input-group-btn" id="btn">
+        <div id="btn">
           <%= button_tag "Card search", :class => 'btn',:name => nil%>
         </div>
       </div>
     <% end %>
   </div>
 </div>
+<br><br>
+<div class="well">
+  <%= image_tag("filigree.jpg", :alt => "psychic", :id => "filigree_image") %>
+</div>
+
+
 <br><br><br><br>
