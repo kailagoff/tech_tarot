@@ -1,5 +1,16 @@
 
-
-<% @response.each do |r| %>
-  <%= r["web_url"] %>
-<% end %>
+<div class="well">
+  <h4>New York Times</h4>
+  <h5>Articles on Tarot</h5>
+</div>
+<div class="row">
+  <div class="col s4">
+    <%= image_tag("cards.jpg", :alt => "article", :id => "article_pic") %>
+  </div>
+  <div class="col s8">
+    <% @response.each do |r| %>
+    <%= link_to r["snippet"], r["web_url"], :target => "_blank" %>
+    <br>
+    <% end %>
+  </div>
+</div>

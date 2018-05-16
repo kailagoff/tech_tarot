@@ -33,6 +33,13 @@ _The website is divided into several different sections. There is a home page th
   * Add NASA_API_KEY=DEMO_KEY [replace DEMO_KEY with your API key] to .env
   * ADD .env to your .gitignore file
 
+## New York Times API key
+
+    * Visit https://developer.nytimes.com/ to obtain a free API key
+    * Create a file called `.env`
+    * Add NYT_API_KEY=DEMO_KEY [replace DEMO_KEY with your API key] to .env
+    * ADD .env to your .gitignore file
+
 
 ## Setup/Installation Requirements
 
