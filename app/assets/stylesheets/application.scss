@@ -161,6 +161,10 @@ html, body a:hover {
 }
 
 #gif {
-  height: 250px;
+  height: 500px;
   width: 100%;
+}
+
+#deck_show, #search_bar, #ornament_pic, #nav_bar {
+  display: none;
 }

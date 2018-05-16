@@ -1,9 +1,11 @@
-<br><br><br>
-<div class="well">
-  <%= image_tag("giphy.gif", :alt => "flower", :id => "gif") %>
+<div id="candle_gif">
+  <%= image_tag("giphy.gif", :alt => "candle_gif", :id => "gif") %>
+</div>
+<div id="enter_btn">
+  <%= button_to "Enter Site", { :action => "index" }, :method => :get, remote: true  %>
 </div>
 <br><br>
-<div class="row">
+<div class="row" id="deck_show">
   <div class="col s12">
     <div id="cards-home">
     <% @cards.each do |card| %>
@@ -13,7 +15,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container" id="search_bar">
   <div>
     <%= form_tag(search_page_path, :method => "get",
           class: 'navbar-form navbar-left') do %>
@@ -26,8 +28,9 @@
     <% end %>
   </div>
 </div>
+
 <br><br>
-<div class="well">
+<div class="well" id="ornament_pic">
   <%= image_tag("ornament.png", :alt => "psychic", :id => "filigree_image") %>
 </div>
 <br><br><br><br>

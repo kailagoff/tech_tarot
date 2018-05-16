@@ -2,6 +2,11 @@ class CardsController < ApplicationController
 
   def index
     @cards = Card.all.order(:id)
+    respond_to do |format|
+      format.html 
+      format.js { render 'cards/index.js.erb'}
+      format.js
+     end
   end
 
   def show
