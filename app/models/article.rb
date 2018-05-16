@@ -6,11 +6,15 @@ class Article
     uri.query = URI.encode_www_form({
       "api-key" => ENV['NYT_API_KEY'],
       "q" => "tarot",
-      "begin_date" => "20170101",
-      "end_date" => "20181212",
-      "fl" => "abstract"
+      "fl" => "snippet, web_url, headline"
     })
     request = Net::HTTP::Get.new(uri.request_uri)
     @result = JSON.parse(http.request(request).body)
   end
+
+  # def printArticles
+  #   @result["response"]["docs"].each do |article|
+  #     return article["web_url"]
+  #   end
+  # end
 end

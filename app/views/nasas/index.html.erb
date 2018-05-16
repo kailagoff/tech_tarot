@@ -22,7 +22,7 @@
     <div class="col s6">
       <h3><%= link_to "NASA", "https://apod.nasa.gov/apod/astropix.html", :target => "_blank" %></h3>
       <h4>Photo of the Day</h4>
-      <h6><%= @nasa_info["title"] %> <%= @nasa_info["date"] %></h6>
+      <h6><%= @nasa_info["date"] %> <%= @nasa_info["title"] %></h6>
       <%= image_tag @nasa_info["url"], :id => "nasa_image" %>
       <br><br>
       <div id="nasa_info"></div>

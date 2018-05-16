@@ -1,2 +1,7 @@
-<%= @articles %>
+
 <%= @response %>
+
+
+<% @response.each do |r| %>
+  <%= r[web_url] %>
+  <% end %>
