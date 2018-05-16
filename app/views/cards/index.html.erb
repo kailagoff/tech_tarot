@@ -5,16 +5,6 @@
   <%= button_to "Enter Site", { :action => "index" }, :method => :get, remote: true  %>
 </div>
 <br><br>
-<div class="row" id="deck_show">
-  <div class="col s12">
-    <div id="cards-home">
-    <% @cards.each do |card| %>
-       <%= link_to image_tag(card.image.url(:thumb)), card_path(card) %>
-    <% end %>
-    </div>
-  </div>
-</div>
-
 <div class="container" id="search_bar">
   <div>
     <%= form_tag(search_page_path, :method => "get",
@@ -28,6 +18,18 @@
     <% end %>
   </div>
 </div>
+<br><br><br>
+<div class="row" id="deck_show">
+  <div class="col s12">
+    <div id="cards-home">
+    <% @cards.each do |card| %>
+       <%= link_to image_tag(card.image.url(:thumb)), card_path(card) %>
+    <% end %>
+    </div>
+  </div>
+</div>
+
+
 
 <br><br>
 <div class="well" id="ornament_pic">

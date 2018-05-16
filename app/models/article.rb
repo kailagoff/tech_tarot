@@ -9,7 +9,8 @@ class Article
       "fl" => "snippet, web_url, headline"
     })
     request = Net::HTTP::Get.new(uri.request_uri)
-    @result = JSON.parse(http.request(request).body)
+    api = http.request(request).body
+    @result = JSON.parse(api)["response"]["docs"]
   end
 
   # def printArticles

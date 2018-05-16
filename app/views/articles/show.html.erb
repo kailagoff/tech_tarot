@@ -1,7 +1,5 @@
 
-<%= @response %>
-
 
 <% @response.each do |r| %>
-  <%= r[web_url] %>
-  <% end %>
+  <%= r["web_url"] %>
+<% end %>
