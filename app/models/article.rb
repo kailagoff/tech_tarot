@@ -12,10 +12,4 @@ class Article
     api = http.request(request).body
     @result = JSON.parse(api)["response"]["docs"]
   end
-
-  # def printArticles
-  #   @result["response"]["docs"].each do |article|
-  #     return article["web_url"]
-  #   end
-  # end
 end

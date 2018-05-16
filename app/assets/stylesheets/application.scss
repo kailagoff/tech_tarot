@@ -18,7 +18,7 @@
 $error-color: color("red", "base") !default;
 
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Old Standard TT', serif;
   background: black;
   color: #AA8C2C;
 }
@@ -165,7 +165,7 @@ html, body a:hover {
   width: 100%;
 }
 
-#deck_show, #search_bar, #ornament_pic {
+#deck_show, #search_bar, #ornament_pic, #nasa_info, #card_info {
   display: none;
 }
 
