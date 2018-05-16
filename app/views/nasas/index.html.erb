@@ -7,6 +7,8 @@
   <%= image_tag("tarots2.jpg", :alt => "psychic", :class => "style_image") %>
 </div>
 
+
+
 <div id="one-a-day">
   <div class="row">
     <div class="col s6">
@@ -28,3 +30,7 @@
     </div>
   </div>
 </div>
+
+<%= button_to "Show content", { :action => "new" }, :method => :get, remote: true  %>
+<div id="nasa_info">
+<br><br><br><br><br><br><br>
