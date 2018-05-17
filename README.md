@@ -8,14 +8,12 @@
 <kbd><img src="app/assets/images/screenshot.png"></kbd>
 
 ## Description
-_Tech Tarot is my capstone project for Epicodus. It was built with Ruby on Rails. I used  Materialize Bootstrap and Sass to help style the website. The Ruby gem Devise was used for authentication on the site, and Paperclip was used for image upload. ActiveRecord was utilized in order to store information to a pSQL relational database._
+_Tech Tarot is my capstone project for Epicodus. It was built with Ruby on Rails. I used Materialize and Sass to help style the website. The Ruby gem Devise was used for authentication on the site, and Paperclip was used for image upload. ActiveRecord was utilized in order to store information to a pSQL relational database._
 
-_The website is divided into several different sections. There is a home page that displays all the cards in the deck. There is A major and minor arcana section that shows the cards that are within that arcana._
+_The website is divided into several different sections. There is a home page that displays all the cards in the deck. There is A major and minor arcana section that shows the cards that are within that arcana. There are also two API calls within the project. The first is to New York Times, to view recent articles about Tarot, and the second is to NASA to view their photo of the day. There is also a page to get a four card reading._
 
-### Site will potentially also include:
+##### Site will potentially also include:
 
-  * - [ ] Page that explains how to read and interpret the cards
-  * - [ ] Page that gives a random card reading
   * - [ ] Animations
   * - [ ] Hand drawn versions of all the cards
 
@@ -43,15 +41,16 @@ _The website is divided into several different sections. There is a home page th
 
 ## Setup/Installation Requirements
 
+    * _Clone down project from GitHub_
+    * _Run ```bundle install``` in the terminal to install all necessary gems
     * _Enter in the terminal:_ ``` $rails server```
     * _Using a web browser, type in the url_ ``` localhost:3000 ```
-
 
 ## Post Epicodus Plan
 
 ##### Project Priorities
   * - [ ] Clean up and finish polishing portfolio
-  * - [ ] fix bugs to deploy portfolio to Heroku
+  * - [ ] Fix bugs to deploy portfolio to Heroku
   * - [ ] Create another original project in Angular
   * - [ ] Explore React and its UI components
   * - [ ] Continue building out capstone to its complete
@@ -90,7 +89,7 @@ _The website is divided into several different sections. There is a home page th
   * HTML5
   * Ruby on Rails
   * pSQL/ActiveRecord
-  * Bootstrap/Sass
+  * Materialize/Sass
 
 ### License
 
