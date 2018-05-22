@@ -26,19 +26,13 @@ class Card < ActiveRecord::Base
 
   def self.focusCard
     @deck = Card.all
-    past = @deck.slice(rand(78))
-    present = @deck.slice(rand(77))
-    future = @deck.slice(rand(76))
-    focus = @deck.slice(rand(75))
-    @spread = [past, present, future, focus]
-    @focus = @spread.pop()
+    @focus = @deck.slice(rand(78))
     return @focus
   end
 
   def self.oneCard
     @deck = Card.all
-    one = @deck.slice(rand(78))
-    @one = one
+    @one = @deck.slice(rand(78))
     return @one
   end
 
@@ -48,6 +42,4 @@ class Card < ActiveRecord::Base
   scope :minor_microsoft, -> { where(:suit => 'microsoft') }
   scope :minor_google, -> { where(:suit => 'google') }
   scope :minor_oracle, -> { where(:suit => 'oracle') }
-
-
 end
