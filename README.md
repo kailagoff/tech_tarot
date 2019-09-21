@@ -46,35 +46,6 @@ _The website is divided into several different sections. There is a home page th
     * _Enter in the terminal:_ ``` $rails server```
     * _Using a web browser, type in the url_ ``` localhost:3000 ```
 
-## Post Epicodus Plan
-
-##### Project Priorities
-  * - [ ] Clean up and finish polishing portfolio
-  * - [ ] Fix bugs to deploy portfolio to Heroku
-  * - [ ] Create another original project in Angular
-  * - [ ] Explore React and its UI components
-  * - [ ] Continue building out capstone to its complete
-  * - [ ] Continue to whiteboard with Edabit in JS and Ruby
-
-##### Projects
-  * - [ ] Begin exploring Aframe VR
-  * - [ ] Explore Solidarity, and potentially creating a dApp
-  * - [ ] Build a blockchain in Ruby
-  * - [ ] Explore similarities between Python and Ruby
-  * - [ ] Build a front end with React, that communicates with Rails API
-
-##### Books
-  * - [ ] The Well Grounded Rubyist - Black
-  * - [ ] Ruby on Rails Tutorial - Hartl
-  * - [ ] JavaScript & jQuery - Duckett
-  * - [ ] Learning Javascript - Brown
-  * - [ ] Blockchain - Swan
-
-##### Bonus
-  * - [ ] Leanr what's possible with Responsive Web Design
-  * - [ ] Attend 2018 ATC-W Conference in Portland
-  * - [ ] Attend between 2-3 meetups a month regularly
-  * - [ ] Attend first Hackathon
 
 ## Known Bugs
 
